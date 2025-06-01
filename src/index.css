@@ -1,0 +1,98 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --color-cool-white: #F5F5F5;
+  --color-electric-blue: #007BFF;
+  --color-graphite-gray: #2E2E2E;
+  --color-soft-cyan: #E0F7FA;
+  --color-slate: #6B7280;
+}
+
+/* Base styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+  color: var(--color-graphite-gray);
+  background-color: var(--color-cool-white);
+}
+
+/* Custom utility classes */
+.btn-primary {
+  background-color: var(--color-electric-blue);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  border: 2px solid var(--color-electric-blue);
+  color: var(--color-electric-blue);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  background: transparent;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-electric-blue);
+  color: white;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-electric-blue) 0%, #0056b3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, var(--color-cool-white) 0%, var(--color-soft-cyan) 50%, var(--color-cool-white) 100%);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+/* Animation utilities */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
