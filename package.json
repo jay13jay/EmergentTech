@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://jay13jay.github.io/MetaIntegrations",
+  "homepage": "https://jay13jay.github.io/EmergentTech",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
