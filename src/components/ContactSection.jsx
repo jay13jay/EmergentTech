@@ -23,14 +23,13 @@ const ContactSection = () => {
     // Handle form submission
     console.log('Form submitted:', formData);
   };
-
   const services = [
-    "Electrical Repairs",
-    "Panel Upgrades",
-    "New Installation",
-    "Smart Home Setup",
-    "Emergency Service",
-    "Inspection & Testing",
+    "Smart Lighting Systems",
+    "Home Automation",
+    "Business AV Systems",
+    "IT Services & Support",
+    "Security Systems",
+    "Consultation & Planning",
     "Other"
   ];
 
@@ -40,10 +39,9 @@ const ContactSection = () => {
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
         </svg>
-      ),
-      title: "Call Us",
-      info: "(555) 123-4567",
-      description: "24/7 Emergency Service"
+      ),      title: "Call Us",
+      info: "(804) 601-6673",
+      description: "Available for consultations"
     },
     {
       icon: (
@@ -52,7 +50,7 @@ const ContactSection = () => {
         </svg>
       ),
       title: "Email Us",
-      info: "info@teagueelectric.com",
+      info: "info@emergenttech.com",
       description: "We respond within 2 hours"
     },
     {
@@ -85,10 +83,9 @@ const ContactSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Get in <span className="text-electric-blue">Touch</span>
-          </h2>
-          <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
-            Ready to power up your project? Contact our certified electricians for a free consultation 
-            and discover how we can illuminate your electrical needs.
+          </h2>          <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
+            Ready to transform your space with smart automation? Contact our certified integration specialists 
+            for a free consultation and discover how we can enhance your home or business.
           </p>
         </div>
 
@@ -164,7 +161,7 @@ const ContactSection = () => {
                   required
                   rows={5}
                   className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-electric-blue/50 focus:border-electric-blue resize-none"
-                  placeholder="Tell us about your electrical needs..."
+                  placeholder="Tell us about your smart home or automation needs..."
                 ></textarea>
               </div>
 
@@ -194,9 +191,8 @@ const ContactSection = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div className="text-center lg:text-left">
-              <h3 className="text-2xl font-bold mb-4 text-white">Contact Information</h3>
-              <p className="text-white/80 leading-relaxed">
-                Our experienced team is ready to help with all your electrical needs. 
+              <h3 className="text-2xl font-bold mb-4 text-white">Contact Information</h3>              <p className="text-white/80 leading-relaxed">
+                Our experienced integration specialists are ready to help with all your smart home and business automation needs. 
                 Reach out today for professional service you can trust.
               </p>
             </div>

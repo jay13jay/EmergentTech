@@ -1,67 +1,29 @@
 import React from 'react';
 
-const ServicesGrid = () => {
-  const services = [
-    {
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
-      ),
-      title: "Electrical Repair",
-      description: "Fast, reliable repairs for all electrical issues. From outlet problems to circuit breakers, we fix it right the first time.",
-      features: ["Emergency repairs", "Circuit troubleshooting", "Outlet installation", "Safety inspections"],
-      bgColor: "bg-blue-50",
-      iconColor: "text-blue-600"
-    },
-    {
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-        </svg>
-      ),
-      title: "Installation Services",
-      description: "Professional installation of electrical systems, appliances, and fixtures with code compliance guaranteed.",
-      features: ["Panel upgrades", "New construction", "Appliance hookups", "Code compliance"],
-      bgColor: "bg-green-50",
-      iconColor: "text-green-600"
-    },
+const ServicesGrid = () => {  const services = [
     {
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
         </svg>
       ),
-      title: "Smart Home Automation",
-      description: "Modern automation solutions for lighting, security, and energy management. Control your home from anywhere.",
-      features: ["Smart lighting", "Home security", "Energy monitoring", "Voice control"],
-      bgColor: "bg-purple-50",
-      iconColor: "text-purple-600"
-    },
-    {
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-        </svg>
-      ),
-      title: "Lighting Solutions",
-      description: "Indoor and outdoor lighting design and installation. LED upgrades, landscape lighting, and custom solutions.",
-      features: ["LED conversions", "Landscape lighting", "Track lighting", "Dimmer systems"],
+      title: "Smart Lighting Systems",
+      description: "Professional smart lighting design and installation with Control4, Lutron, and wireless solutions. Transform your space with automated lighting control.",
+      features: ["Lutron/Caséta Integration", "Scene Programming", "Voice Control", "Energy Monitoring"],
       bgColor: "bg-yellow-50",
       iconColor: "text-yellow-600"
     },
     {
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2v0a2 2 0 002-2h14a2 2 0 012 2v2" />
         </svg>
       ),
-      title: "Security Systems",
-      description: "Comprehensive electrical security solutions including cameras, alarms, and access control systems.",
-      features: ["Security cameras", "Alarm systems", "Access control", "Monitoring setup"],
-      bgColor: "bg-red-50",
-      iconColor: "text-red-600"
+      title: "Home Automation",
+      description: "Complete home automation systems integrating security, climate, entertainment, and smart devices for seamless control from anywhere.",
+      features: ["Whole-home Integration", "Security Systems", "Climate Control", "Mobile App Control"],
+      bgColor: "bg-blue-50",
+      iconColor: "text-blue-600"
     },
     {
       icon: (
@@ -69,11 +31,47 @@ const ServicesGrid = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
         </svg>
       ),
-      title: "Commercial Services",
-      description: "Professional electrical services for businesses, offices, and commercial properties. Licensed and insured.",
-      features: ["Office wiring", "Maintenance plans", "Emergency service", "Code updates"],
+      title: "Business Automation",
+      description: "Professional office and commercial automation systems including conference rooms, access control, and operational efficiency solutions.",
+      features: ["Conference Room Tech", "Access Control", "Energy Management", "Remote Monitoring"],
+      bgColor: "bg-green-50",
+      iconColor: "text-green-600"
+    },
+    {
+      icon: (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+        </svg>
+      ),
+      title: "Audio/Visual Systems",
+      description: "Professional AV installations for home theaters, conference rooms, smart boards, and entertainment systems with seamless integration.",
+      features: ["Home Theaters", "Conference Rooms", "Smart Boards", "Multi-room Audio"],
+      bgColor: "bg-purple-50",
+      iconColor: "text-purple-600"
+    },
+    {
+      icon: (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+        </svg>
+      ),
+      title: "IT Services",
+      description: "Comprehensive on-premises and cloud IT services including network setup, server management, and cybersecurity solutions.",
+      features: ["Network Infrastructure", "Cloud Solutions", "Server Management", "Cybersecurity"],
       bgColor: "bg-indigo-50",
       iconColor: "text-indigo-600"
+    },
+    {
+      icon: (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+      ),
+      title: "Ongoing Support",
+      description: "Subscription-based monitoring and maintenance services to keep your smart systems running optimally with remote diagnostics.",
+      features: ["Monthly Monitoring", "Remote Diagnostics", "Priority Support", "System Updates"],
+      bgColor: "bg-red-50",
+      iconColor: "text-red-600"
     }
   ];
 
@@ -92,14 +90,13 @@ const ServicesGrid = () => {
           <div className="inline-flex items-center px-4 py-2 bg-accent/10 rounded-full text-accent font-medium text-sm mb-6">
             <span className="w-2 h-2 bg-accent rounded-full mr-2"></span>
             Our Services
-          </div>
-          <h2 className="text-3xl lg:text-4xl font-bold text-dark mb-6">
-            Complete Electrical Solutions
-            <span className="text-gradient"> for Every Need</span>
+          </div>          <h2 className="text-3xl lg:text-4xl font-bold text-dark mb-6">
+            Smart Integration Solutions
+            <span className="text-gradient"> for Modern Living</span>
           </h2>
           <p className="text-lg text-secondary max-w-3xl mx-auto">
-            From emergency repairs to complete installations, our licensed electricians 
-            provide professional services for residential and commercial properties.
+            From smart lighting and home automation to business AV systems and IT infrastructure,
+            we provide comprehensive integrated solutions for residential and commercial properties.
           </p>
         </div>
 
@@ -149,13 +146,12 @@ const ServicesGrid = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <div className="bg-white rounded-2xl p-8 lg:p-12 shadow-lg">
-            <h3 className="text-2xl lg:text-3xl font-bold text-dark mb-4">
-              Need a Custom Electrical Solution?
+          <div className="bg-white rounded-2xl p-8 lg:p-12 shadow-lg">            <h3 className="text-2xl lg:text-3xl font-bold text-dark mb-4">
+              Need a Custom Integration Solution?
             </h3>
             <p className="text-secondary mb-8 max-w-2xl mx-auto">
-              Every project is unique. Contact us to discuss your specific electrical needs 
-              and get a personalized solution that fits your budget and timeline.
+              Every space is unique. Contact us to discuss your smart home, business automation, 
+              or IT infrastructure needs and get a personalized solution that fits your lifestyle and budget.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
@@ -163,12 +159,11 @@ const ServicesGrid = () => {
                 className="btn-primary"
               >
                 Get Free Consultation
-              </button>
-              <a
-                href="tel:+1234567890"
+              </button>              <a
+                href="tel:+18046016673"
                 className="btn-secondary"
               >
-                Call for Emergency Service
+                Call for Project Planning
               </a>
             </div>
           </div>

@@ -1,24 +1,23 @@
 import React from 'react';
 
-const AboutSection = () => {
-  const features = [
+const AboutSection = () => {  const features = [
     {
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       ),
-      title: "Licensed & Insured",
-      description: "Fully licensed electricians with comprehensive insurance coverage for your peace of mind."
+      title: "Certified Integrators",
+      description: "Control4, Crestron, and Lutron certified with expertise in multiple smart home platforms."
     },
     {
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
         </svg>
       ),
-      title: "24/7 Emergency Service",
-      description: "Round-the-clock availability for electrical emergencies. We're here when you need us most."
+      title: "Ongoing Support Plans",
+      description: "Subscription-based monitoring and maintenance to keep your systems running optimally."
     },
     {
       icon: (
@@ -26,8 +25,8 @@ const AboutSection = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
         </svg>
       ),
-      title: "100% Satisfaction Guarantee",
-      description: "We stand behind our work with a complete satisfaction guarantee on all services."
+      title: "Complete Integration",
+      description: "End-to-end solutions combining lighting, security, AV, and IT into unified systems."
     },
     {
       icon: (
@@ -35,16 +34,15 @@ const AboutSection = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
         </svg>
       ),
-      title: "Competitive Pricing",
-      description: "Fair, transparent pricing with free estimates and no hidden fees."
+      title: "Transparent Pricing",
+      description: "Project-based fees with recurring service options and no hidden costs."
     }
   ];
-
   const stats = [
     { number: "15+", label: "Years Experience" },
-    { number: "1000+", label: "Projects Completed" },
-    { number: "500+", label: "Happy Customers" },
-    { number: "24/7", label: "Emergency Service" }
+    { number: "500+", label: "Smart Homes Installed" },
+    { number: "200+", label: "Business Integrations" },
+    { number: "100%", label: "Client Satisfaction" }
   ];
 
   return (
@@ -52,30 +50,28 @@ const AboutSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Content */}
-          <div>
-            <div className="inline-flex items-center px-4 py-2 bg-accent/10 rounded-full text-accent font-medium text-sm mb-6">
+          <div>            <div className="inline-flex items-center px-4 py-2 bg-accent/10 rounded-full text-accent font-medium text-sm mb-6">
               <span className="w-2 h-2 bg-accent rounded-full mr-2"></span>
-              About ElectricPro
+              About Emergent Tech
             </div>
             
             <h2 className="text-3xl lg:text-4xl font-bold text-dark mb-6">
               Your Trusted
-              <span className="text-gradient"> Electrical Partner</span>
+              <span className="text-gradient"> Integration Partner</span>
               <br />
               Since 2008
             </h2>
             
             <p className="text-lg text-secondary mb-8 leading-relaxed">
-              For over 15 years, ElectricPro has been the premier electrical service provider 
-              in the metro area. Our team of licensed, experienced electricians is committed 
-              to delivering safe, reliable, and professional electrical solutions for homes 
-              and businesses.
+              For over 15 years, Emergent Tech has been the premier smart home and automation 
+              service provider in the metro area. Our certified team specializes in integrated 
+              solutions that combine smart lighting, home automation, AV systems, and IT infrastructure.
             </p>
             
             <p className="text-secondary mb-8 leading-relaxed">
-              We understand that electrical issues can be stressful and disruptive. That's why 
-              we prioritize quick response times, transparent communication, and quality workmanship 
-              that you can trust. From simple repairs to complex installations, we treat every 
+              We understand that technology should simplify your life, not complicate it. That's why 
+              we focus on seamless integration, ongoing support, and solutions that grow with your needs. 
+              From smart lighting upgrades to complete home automation systems, we deliver excellence.
               project with the same level of professionalism and attention to detail.
             </p>
 
@@ -94,9 +90,8 @@ const AboutSection = () => {
               ))}
             </div>
 
-            {/* CTA */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a href="tel:+1234567890" className="btn-primary">
+            {/* CTA */}            <div className="flex flex-col sm:flex-row gap-4">
+              <a href="tel:+18046016673" className="btn-primary">
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>

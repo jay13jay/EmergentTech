@@ -31,10 +31,9 @@ const Header = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 lg:h-20">
-          {/* Logo */}
-          <div className="flex-shrink-0">
+          {/* Logo */}          <div className="flex-shrink-0">
             <div className="text-2xl lg:text-3xl font-bold text-gradient">
-              ElectricPro
+              Emergent Tech
             </div>
           </div>
 
@@ -66,13 +65,12 @@ const Header = () => {
             </button>
           </nav>
 
-          {/* CTA Button - Desktop */}
-          <div className="hidden lg:flex items-center space-x-4">
+          {/* CTA Button - Desktop */}          <div className="hidden lg:flex items-center space-x-4">
             <a
-              href="tel:+1234567890"
+              href="tel:+18046016673"
               className="text-accent hover:text-blue-600 font-semibold transition-colors duration-200"
             >
-              (123) 456-7890
+              (804) 601-6673
             </a>
             <button
               onClick={() => scrollToSection('contact')}
@@ -141,13 +139,12 @@ const Header = () => {
                 className="block px-3 py-2 text-dark hover:text-accent transition-colors duration-200 font-medium w-full text-left"
               >
                 Contact
-              </button>
-              <div className="px-3 py-2 border-t border-gray-200 mt-2">
+              </button>              <div className="px-3 py-2 border-t border-gray-200 mt-2">
                 <a
-                  href="tel:+1234567890"
+                  href="tel:+18046016673"
                   className="block text-accent hover:text-blue-600 font-semibold mb-2"
                 >
-                  (123) 456-7890
+                  (804) 601-6673
                 </a>
                 <button
                   onClick={() => scrollToSection('contact')}

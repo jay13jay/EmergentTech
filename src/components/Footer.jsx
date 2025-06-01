@@ -1,11 +1,10 @@
 import React from 'react';
 
-const Footer = () => {
-  const quickLinks = [
-    { name: "Electrical Repairs", href: "#services" },
-    { name: "Panel Upgrades", href: "#services" },
-    { name: "Smart Home Installation", href: "#services" },
-    { name: "Emergency Service", href: "#contact" },
+const Footer = () => {  const quickLinks = [
+    { name: "Smart Lighting Systems", href: "#services" },
+    { name: "Home Automation", href: "#services" },
+    { name: "Business AV Systems", href: "#services" },
+    { name: "IT Services", href: "#contact" },
     { name: "Free Consultation", href: "#contact" }
   ];
 
@@ -24,13 +23,12 @@ const Footer = () => {
     { name: "Insurance", href: "#" },
     { name: "Warranty", href: "#" }
   ];
-
   const certifications = [
     "Licensed & Insured",
-    "NECA Member",
-    "Better Business Bureau A+",
-    "Master Electrician Certified",
-    "OSHA Compliant"
+    "Control4 Certified",
+    "Lutron Certified",
+    "Crestron Authorized",
+    "IT Security Compliant"
   ];
 
   return (
@@ -53,12 +51,11 @@ const Footer = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <span className="text-2xl font-bold text-white">Teague Electric</span>
+              <span className="text-2xl font-bold text-white">Emergent Tech</span>
             </div>
-            
-            <p className="text-white/80 leading-relaxed mb-6">
-              Your trusted electrical experts serving the community with reliable, 
-              safe, and professional electrical services for over 15 years.
+              <p className="text-white/80 leading-relaxed mb-6">
+              Your trusted smart home and automation experts serving the community with integrated 
+              solutions for lighting, security, AV systems, and IT infrastructure for over 15 years.
             </p>
 
             {/* Certifications */}
@@ -126,9 +123,8 @@ const Footer = () => {
                   <svg className="w-4 h-4 text-electric-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
-                </div>
-                <div>
-                  <p className="text-white font-medium">(555) 123-4567</p>
+                </div>                <div>
+                  <p className="text-white font-medium">(804) 601-6673</p>
                   <p className="text-white/60 text-sm">24/7 Emergency</p>
                 </div>
               </div>
@@ -140,7 +136,7 @@ const Footer = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-white font-medium">info@teagueelectric.com</p>
+                  <p className="text-white font-medium">info@emergenttech.com</p>
                   <p className="text-white/60 text-sm">Quick Response</p>
                 </div>
               </div>
