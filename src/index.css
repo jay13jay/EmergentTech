@@ -9,6 +9,15 @@
   --color-slate: #6B7280;
 }
 
+/* Dark mode color variables */
+[data-theme="dark"] {
+  --color-cool-white: #1a1a1a;
+  --color-electric-blue: #3B82F6;
+  --color-graphite-gray: #2E2E2E;
+  --color-soft-cyan: #1E293B;
+  --color-slate: #94A3B8;
+}
+
 /* Base styles */
 * {
   box-sizing: border-box;
@@ -24,12 +33,13 @@ body {
   line-height: 1.6;
   color: var(--color-graphite-gray);
   background-color: var(--color-cool-white);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Custom utility classes */
 .btn-primary {
   background-color: var(--color-electric-blue);
-  color: white;
+  color: var(--color-cool-white);
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
   font-weight: 600;

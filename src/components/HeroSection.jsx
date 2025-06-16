@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   const scrollToSection = (sectionId) => {
@@ -35,12 +36,30 @@ const HeroSection = () => {
             <p className="text-lg lg:text-xl text-secondary leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
               From smart lighting and home automation to business AV systems and IT services, 
               we create integrated solutions that enhance your lifestyle and productivity.
-            </p>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">              <a
-                href="tel:+18046016673"
+            </p>            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
+              <Link
+                to="/calculator"
                 className="btn-primary text-center"
+              >
+                <svg
+                  className="w-5 h-5 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+                  />
+                </svg>
+                Get Instant Estimate
+              </Link>
+              <a
+                href="tel:+18046016673"
+                className="btn-secondary text-center"
               >
                 <svg
                   className="w-5 h-5 mr-2"

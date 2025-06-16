@@ -114,7 +114,7 @@ const Footer = () => {  const quickLinks = [
 
           {/* Contact & Social */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-white">Get in Touch</h3>
+            <h3 className="text-xl font-bold mb-6 text-electric-blue">Get in Touch</h3>
             
             {/* Contact Info */}
             <div className="space-y-4 mb-6">

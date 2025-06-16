@@ -1,0 +1,105 @@
+{
+  "laborRate": 85,
+  "bufferPercentage": 20,
+  "installationTimes": {
+    "smartHub": 2,
+    "thermostat": 1.5,
+    "smartSwitch": 0.5,
+    "smartDimmer": 0.6,
+    "motionSensor": 0.3,
+    "doorWindowSensor": 0.2,
+    "smartLock": 1.2,
+    "securityCamera": 1.0,
+    "doorbellCamera": 1.5,
+    "touchPanel": 2.0,
+    "voiceAssistant": 0.3,
+    "smartSpeaker": 0.4,
+    "inWallSpeaker": 2.0,
+    "ledStrip": 1.0,
+    "smartBulb": 0.1,
+    "motorizedBlind": 2.5,
+    "temperatureSensor": 0.3,
+    "humiditySensor": 0.3,
+    "glassBreakSensor": 0.4,
+    "tvMount": 1.5,
+    "networkSetup": 3.0,
+    "cloudServer1TB": 3.0,
+    "cloudServer2TB": 3.0,
+    "cloudServer4TB": 3.5,
+    "cloudServer8TB": 4.0,
+    "cloudServer16TB": 4.5,
+    "wholeHomeAudio": 8.0,
+    "securitySystemController": 3.0,
+    "cameraSystemController": 2.0
+  },
+  "hardwareCosts": {
+    "smartHub": 299,
+    "thermostat": 249,
+    "smartSwitch": 45,
+    "smartDimmer": 65,
+    "motionSensor": 35,
+    "doorWindowSensor": 25,
+    "smartLock": 199,
+    "securityCamera": 149,
+    "doorbellCamera": 249,
+    "touchPanel": 399,
+    "voiceAssistant": 79,
+    "smartSpeaker": 129,
+    "inWallSpeaker": 199,
+    "ledStrip": 39,
+    "smartBulb": 15,
+    "motorizedBlind": 299,
+    "temperatureSensor": 29,
+    "humiditySensor": 35,
+    "glassBreakSensor": 45,
+    "tvMount": 89,
+    "networkSetup": 499,
+    "cloudServer1TB": 1388,
+    "cloudServer2TB": 1477,
+    "cloudServer4TB": 1655,
+    "cloudServer8TB": 2011,
+    "cloudServer16TB": 2723,
+    "wholeHomeAudio": 1999,
+    "securitySystemController": 599,
+    "cameraSystemController": 399
+  },
+  "roomDefaults": {
+    "livingRoom": ["lighting", "entertainment", "climate", "windowTreatments"],
+    "bedroom": ["lighting", "climate", "windowTreatments"],
+    "kitchen": ["lighting", "climate", "sensors"],
+    "bathroom": ["lighting", "climate", "sensors"],
+    "office": ["lighting", "entertainment", "climate", "sensors"],
+    "diningRoom": ["lighting", "climate"],
+    "basement": ["lighting", "security", "climate"],
+    "garage": ["lighting", "security", "climate"],
+    "laundryRoom": ["lighting", "sensors"],
+    "hallway": ["lighting", "sensors"]
+  },
+  "roomSizeMultipliers": {
+    "small": 1.0,
+    "medium": 1.5,
+    "large": 2.0
+  },
+  "basicCalculatorDefaults": {
+    "lighting": {
+      "items": ["smartSwitch", "smartDimmer", "ledStrip"],
+      "baseQuantity": 3
+    },
+    "climate": {
+      "items": ["thermostat", "temperatureSensor"],
+      "baseQuantity": 1
+    },
+    "security": {
+      "items": ["motionSensor", "doorWindowSensor", "securityCamera"],
+      "baseQuantity": 2
+    },
+    "entertainment": {
+      "items": ["smartSpeaker", "tvMount"],
+      "baseQuantity": 1
+    },
+    "windowTreatments": {
+      "items": ["motorizedBlind"],
+      "baseQuantity": 2
+    }
+  }
+}

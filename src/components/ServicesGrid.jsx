@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ServicesGrid = () => {  const services = [
     {
@@ -152,14 +153,22 @@ const ServicesGrid = () => {  const services = [
             <p className="text-secondary mb-8 max-w-2xl mx-auto">
               Every space is unique. Contact us to discuss your smart home, business automation, 
               or IT infrastructure needs and get a personalized solution that fits your lifestyle and budget.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button
-                onClick={() => scrollToSection('contact')}
+            </p>            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                to="/calculator"
                 className="btn-primary"
               >
+                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+                Get Instant Estimate
+              </Link>
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="btn-secondary"
+              >
                 Get Free Consultation
-              </button>              <a
+              </button><a
                 href="tel:+18046016673"
                 className="btn-secondary"
               >
